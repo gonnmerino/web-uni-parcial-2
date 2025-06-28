@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url(fonts/LibreBaskerville-Bold.ttf);
+}
+
+.nav-container {
+    display: none;
+    gap: 10px;
+    text-shadow: black 2px 2px 8px;
+}
+
+.title {
+    color: rgb(255, 252, 238);
+    text-align: center;
+    grid-row: 2;
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    width: fit-content;
+    justify-self: center;
+}
+
+#button-selected {
+    color: #c04215;
+}
+
+@media (min-width: 850px) {
+    .menu-mobile-container {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        grid-area: nav;
+        flex-direction: row;
+        width: fit-content;
+        justify-self: right;
+        margin: 2rem 2rem 0 0;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-left: 4rem;
+    }
+
+    .header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        text-shadow: black 2px 2px 8px;
+    }
+
+    img {
+        transition: all 0.3s ease-in-out;
+        filter: brightness(0.98);
+    }
+
+    img:hover {
+        transform: scale(1.04);
+        filter: brightness(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+}

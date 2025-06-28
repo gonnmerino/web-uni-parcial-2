@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Interestelar</title>
+    <link rel="icon" href="../favicon-.png" type="image/x-icon">
+    <link rel="stylesheet" href="../globalstyles.css">
+    <link rel="stylesheet" href="../css/menu-mobile.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+</head>
+
+<body class="bg">
+    <div class="grid-container">
+        <nav class="nav-container">
+            <a class="nav-items" href="../index.html">INICIO</a>
+            <a class="nav-items" href="sobre-interestelar.html">SOBRE INTERSTELLAR</a>
+            <a class="nav-items" href="produccion-estudio.html">PRODUCCION Y ESTUDIO</a>
+            <a class="nav-items" href="curiosidades-premios.html">CURIOSIDADES Y PREMIOS</a>
+            <a class="nav-items" href="reparto.html">REPARTO</a>
+            <a class="nav-items" id="button-selected" href="">CONTACTO</a>
+        </nav>
+        <header class="header">
+            <h1 class="title">INTERESTELAR</h1>
+            <div class="menu-mobile-container">
+                <input type="checkbox" id="toggle-menu" class="menu-toggle" />
+                <label class="menu-mobile" for="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <aside class="sidebar">
+                    <a class="nav-items" href="../index.html">INICIO</a>
+                    <a class="nav-items" href="sobre-interestelar.html">SOBRE INTERSTELLAR</a>
+                    <a class="nav-items" href="produccion-estudio.html">PRODUCCION Y ESTUDIO</a>
+                    <a class="nav-items" href="curiosidades-premios.html">CURIOSIDADES Y
+                        PREMIOS</a>
+                    <a class="nav-items" href="reparto.html">REPARTO</a>
+                    <a class="nav-items" id="button-selected" href="contacto.html">CONTACTO</a>
+                </aside>
+            </div>
+        </header>
+        <div class="empty-row"></div>
+        <div class="contact-form-container">
+
+            <form class="contact-form" action="confirmacion-formulario.html" method="GET">
+                <h2 class="form-title">Envianos tu mensaje</h2>
+                <div class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <p id="footer">&copy; 2029 Copyright, Alls Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
