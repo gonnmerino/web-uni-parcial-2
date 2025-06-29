@@ -13,7 +13,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: 50px 50px auto 20vh 22vh 30px;
+    grid-template-rows: 50px auto 1fr auto auto;
     grid-template-columns: 1fr;
     grid-template-areas:
         "mobile"
@@ -78,7 +78,7 @@
 }
 
 .sinopsis-p {
-    padding: 10px 0 10px 0;
+        margin: auto;
 }
 
 .footer {
@@ -88,7 +88,7 @@
     text-align: center;
     justify-content: center;
     font-size: .8rem;
-    align-items: center;
+    align-self: end;
     padding: 4px;
     background-color: rgba(128, 128, 128, 0.2);
     backdrop-filter: blur(5px);
@@ -102,7 +102,7 @@ iframe {
 @media (min-width: 850px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 50px 70px 1fr 200px 70px 10vh auto;
+        grid-template-rows: auto auto 1fr auto auto auto;
         grid-template-columns: 1fr;
         grid-template-areas:
             "nav"
