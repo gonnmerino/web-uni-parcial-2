@@ -13,7 +13,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: 50px 50px auto 30px 22vh 30px;
+    grid-template-rows: 50px 50px auto 20vh 22vh 30px;
     grid-template-columns: 1fr;
     grid-template-areas:
         "mobile"
